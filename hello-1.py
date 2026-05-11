@@ -70,3 +70,30 @@ def afternoonGreetings(name):
 greetings = afternoonGreetings(name="Wonder Woman")
 
 print(greetings)
+
+def morningGreet(name):
+    print("My name is", name)
+
+morningGreet("Ann Moraa")
+
+
+# Apply diacount function
+def apply_discount(price, discount):
+    if not isinstance(price, (int, float)):
+        return "The price should be a number"
+    elif not isinstance(discount,(int, float)):
+        return "The discount should be a number"
+
+    elif price <= 0:
+        return "The price should be greater than 0"
+
+    elif discount < 0 or discount > 100:
+        return "The discount should be between 0 and 100"
+
+    else:
+        discount_amount =(discount*price)/100
+        final_price = price - discount_amount
+        return final_price
+
+final_price = apply_discount(60, 10) 
+print(final_price)
