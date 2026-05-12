@@ -1,14 +1,10 @@
 """
-In this workshop, you are going to build a Caesar cipher. This is one of the simplest techniques to encrypt text, which consists of substituting each letter of the plain text with the letter found at a fixed number of positions down the alphabet. For example, with a shift of 5, a would be replaced by f, b by g and so on.
+Caesar Cipher:
+A simple encryption method that shifts letters by a fixed number.
+Example: with shift 5, a → f, b → g.
 
-The str.maketrans() method takes two strings of equal length and returns a translation table that maps each character of the first string with the corresponding character of the second string. Each character in the translation table is stored as a Unicode ordinal, a number that uniquely identifies the character.
-
-Example Code
-lower_chars = 'abc'
-upper_chars = 'ABC'
-
-table = str.maketrans(lower_chars, upper_chars)
-print(table) # {97: 65, 98: 66, 99: 67}
+str.maketrans() creates a translation table mapping characters
+from one string to another using Unicode values.
 """
 
 def caesar(text, shift, encrypt=True):

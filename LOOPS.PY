@@ -1,13 +1,15 @@
 """
-1. for loops - used to run a block of codes a set number of time
+===== FOR LOOPS ======
+
+- Are used to run a block of codes a set number of time
 """
-#eg 1
+#eg 1 for loop in lists
 Fruits = ["pineapple", "apple", "pears", "mango", "stawberries"]
 
 for Fruit in Fruits:
     print(Fruit)
 
-# LOOPS IN STRING
+# for loop in string
 for char in "fruit":
     print(char)
 
@@ -37,7 +39,8 @@ for developer in developer_names:
     print(developer) #statement skips the second iteration of the loop when developer is equal to Naomi, and does not print that name to the terminal, the other two names are printed to the terminal
 
 """
-while loop - this repeats a code of block until the condition is false
+    ===== WHILE LOOP =====
+- this repeats a code of block until the condition is false
 """
 secret_number = 3
 guess = 0
@@ -52,7 +55,7 @@ print('You got it!')
 
 
 """
-List Comprehension
+     ======= LIST COMPREHENSION =======
 
 List comprehension allows one to create a new list in a single line by combining a loop and condition directly within square brackets. This makes the code shorter and often easier to read.
 """
@@ -75,9 +78,10 @@ print(even_numbers)
 numbers = [2,3,4,5,6]
 result = [(number, "even") if number % 2 == 0 else (number,"odd") for number in numbers]
 print(result)
-
-# filter() function 
+ 
 """
+        =======  FILTER() FUNCTION =======
+
 - Used to filter elements from an iterable based on a condition. It returns an iterator that contains only the elements that satisfy the condition. 
 
 Here is an example of creating a new list of just words longer than four characters:
@@ -91,7 +95,8 @@ def is_long_word(word):
 long_words = list(filter(is_long_word, words))
 print(long_words) # ['mountain', 'river', 'cloud']
 
-# Map () function
+
 """
+   ======= MAP() FUNCTION =======
 used to
 """
