@@ -1,4 +1,4 @@
-# User Configuration  Manager 
+# -------- User Configuration  Manager -------- 
 """
 Allows users to manage their settings such as theme, language and notifications
 functions to be implemented: add, update,delete and view users settings

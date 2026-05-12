@@ -1,6 +1,9 @@
 # SETS - are built-in python data structures
 """   
-         characteristics
+         ===== SETS =====
+These ae built-in python data structures.
+
+====== characteristics ======
 
  - Sets don't store duplicate values. If you try to add a duplicate value to a set, only one of them will be stored.
  - Sets are mutable and unordered (no indexing)
