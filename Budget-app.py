@@ -62,6 +62,8 @@ transport = Category("Transport")
 food.transfer(100, transport)
 clothing = Category("Clothing")
 clothing.deposit(1200, "Initial Deposit")
+entertainment = Category("Entertainment")
+education = Category("Education")
 print(food)
 print(transport)
 
