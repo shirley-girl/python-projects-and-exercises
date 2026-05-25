@@ -13,6 +13,10 @@ It contains four key principles:
  ======= Inheritance =======
 
  Inheritance allows code reusability - it allows classes to use methods and properties from another class
+ subclasses(child classes) can use attributes and methods of a base class(parent class)
+ > It also creates class hierarchies 
+ > customizes behaviours without rewriting by either extending existing methods or overring them
+
  ======= Polymorphism =======
 
  Polymorphism alllows same methods or functions to be used on objects differently
@@ -25,7 +29,7 @@ Importance of OOP
 
 
 """
-# 1. Encapsulation:
+# ***** 1. Encapsulation Example ******
 # Class Wallet with balance attribute set to private
 
 # Getting the __balance value by defining the get_balance method
@@ -89,6 +93,7 @@ acct_one.deposit(-4)  # ValueError: Amount must be positive
 acct_one.withdraw(-8) # ValueError: Amount must be positive
 acct_one.withdraw(58) # ValueError: Insufficient funds
 
+# **** 2. Inheritance Example****
 
 
 
